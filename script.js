@@ -5,7 +5,9 @@ const todoList = document.querySelector(".todolist")
 
 // event listener
 
-todoButton.addEventListener("click", addTodo)
+todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", checkremove)
+
 
 // functions
 function addTodo(e) {
@@ -23,4 +25,14 @@ function addTodo(e) {
     todoDiv.innerHTML = newTodo
     //append to todolist
     todoList.appendChild(todoDiv)
+}
+
+function checkremove(e) {
+    const classList = [...e.target.classList]
+    const todo = document.querySelector(".todo")
+    if(classList[1] === "fa-trash-alt") {
+        todo.remove()
+    } else if (classList[1] === "fa-check-square") {
+        todo.classList.toggle("completed")
+    }
 }
