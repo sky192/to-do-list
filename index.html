@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>ToDo list</h1>
+    </header>
+    <section class="container">
+        <div class="form-container">
+            <form action="">
+                <input type="text" class="todo-input">
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </form>
+            <div class="select">
+                <select name="todos" id="" class="filter-todos">
+                    <option value="" class="all">all</option>
+                    <option value="" class="completed">completed</option>
+                    <option value="" class="uncompleted">uncompleted</option>
+                </select>
+            </div>
+        </div>
+        <div class="todo-container">
+            <div class="todo">
+            <li>task 1</li>
+            <span><i class="far fa-check-square"></i></span>
+            <span><i class="far fa-trash-alt"></i></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
